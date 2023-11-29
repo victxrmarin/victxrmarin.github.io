@@ -29,7 +29,7 @@
 #bio-container {
     flex: 1 1 30%;
     min-height: 100vh;
-    background-color: var(--bio-bg-color);
+    background-color: var(--about-bg-color);
     text-align: center;
     padding: 30px 12px;
     border-right: 2px solid var(--bio-border-color);
@@ -39,7 +39,7 @@
     flex: 1 1 70%;
     height: 100%;
     min-height: 100vh;
-    background-color: var(--about-bg-color);
+    background-color: var(--bio-bg-color);
     padding: 50px;
 }
 
@@ -53,7 +53,7 @@
 }
 
 #bio-container #welcome-text {
-    font-weight: bold;
+    font-weight: 300;
 }
 
 #bio-image {
@@ -113,7 +113,7 @@
 #title {
     font-size: 24px;
     margin-bottom: 15px;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .description {
@@ -122,7 +122,7 @@
 }
 
 #btn-project {
-    font-weight: bold;
+    font-weight: 300;
     font-size: 16px;
     color: var(--main-text-color);
     background-color: var(--main-color);
@@ -168,6 +168,63 @@
 .skills-title {
     font-size: 24px;
     margin-bottom: 25px;
-    font-weight: bold;
+    font-weight: 300;
     padding-left: 10px;
+}
+
+.skills-box i {
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+@media(max-width: 450px) {
+
+    #container {
+        flex-direction: column;
+    }
+
+    #bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    #bio-container h2 {
+        display: none;
+    }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container {
+        text-align: center;
+        padding: 30px;
+    }
+
+    #about-container .description {
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
+
+    }
+
+    #btn-projects {
+        margin: 20px auto;
+
+    }
+
+    .skills-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .skills-box i {
+        font-size: 60px;
+    }
+
+
 }
